@@ -1,7 +1,6 @@
-def change():
-    N = int(input())
-    A = list(map(int, input().split()))
-    N = int(input())
+def change(N,A):
+    #A = list(map(int, input().split()))
+    #N = int(input())
 
     INF = 10**10
     F = [INF] * (N+1)
@@ -21,4 +20,4 @@ def change():
             amount += str(Prev[N]) + ' '
             N-= Prev[N]
         return (amount)
-change()
+#change()
